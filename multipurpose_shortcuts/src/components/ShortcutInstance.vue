@@ -1,11 +1,17 @@
 <template>
-    <div></div>
+    <div>
+        {{ getBlah }}
+    </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
-    name: "ShortcutInstance"
+    name: "ShortcutInstance",
+    computed: mapGetters(['getBlah'])
 };
+
 </script>
 
 
